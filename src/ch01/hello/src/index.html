@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <script>
+    console.log("hello");
+
+const options = {
+  method: 'GET',
+  url: 'https://api-football-v1.p.rapidapi.com/v3/teams',
+  params: {id: '33'},
+  headers: {
+    'X-RapidAPI-Key': '0eb7ffe2c1msh0e610683e501690p105067jsn3c5dcf8b1936',
+    'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
+  }
+};
+
+  axios.request(options).then(
+    response => console.log(),
+    error => console.error(error),
+  )
+  </script>
+</body>
+</html>
